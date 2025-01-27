@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinit - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #01001c;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 232);
+            transform: scale(1.1);
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+            flex-wrap: wrap;
+            background-color:beige;
+        }
+
+        .firstsection > div {
+            width: 45%;
+            text-align: center;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #01001c;
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            
+        }
+
+        .purple {
+            color: blueviolet;
+            font-weight: 700;
+        }
+
+        #element {
+            color: blueviolet;
+            font-weight: 700;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #121242;
+            margin: 50px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        section ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        section li {
+            background-color: #3c3c6c;
+            color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            width: 180px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        section li:hover {
+            background-color: #4a4a80;
+            transform: translateY(-5px);
+        }
+
+        .contact form input,
+        .contact form textarea {
+            padding: 15px;
+            width: 80%;
+            margin: 10px 0;
+            background-color: #3c3c6c;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact form button {
+            padding: 12px 25px;
+            background-color: blueviolet;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact form button:hover {
+            background-color: rgb(154, 154, 232);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: rgb(18, 18, 62);
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: rgb(154, 154, 232);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vinit's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftSection">
+                
+                Hi, My name is <span class="purple">Vinit Gohil</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="Vinit Gohil's image">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Vinit Gohil, a Bachelor of Science in Information Technology student at Mumbai University.
+                I am passionate about technology and enjoy creating solutions to complex problems. I excel at building
+                scalable applications and working with a variety of programming languages.
+            </p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>SQL</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <h2>My Certifications</h2>
+            <ul>
+                <li>C Programming</li>
+                <li>C++ Programming</li>
+                <li>Java Programming</li>
+                <li>Python Programming</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li class="project-card">
+                    <h3>Amazon UI</h3>
+                    <p>UI development project showcasing design and layout skills using HTML and CSS.</p>
+                </li>
+                <li class="project-card">
+                    <h3>Dice Roller</h3>
+                    <p>A fun application simulating dice rolls using Python.</p>
+                </li>
+                <li class="project-card">
+                    <h3>Fruit shop</h3>
+                    <p>Comprehensive shopping system built with Java.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="#">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vinit Gohil | <a href="https://linkedin.com/in/vinit-gohil-06171a316">LinkedIn</a> | <a href="https://github.com/Vinitgohil45">GitHub</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Programmer', 'Web Developer'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
